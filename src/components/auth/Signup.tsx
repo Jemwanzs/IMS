@@ -30,12 +30,27 @@ const Signup = ({ onLogin, onSwitchToLogin }) => {
     });
   };
 
+  //const handleColorSchemeSelect = (scheme) => {
+    //setFormData({
+      //...formData,
+      //colorScheme: scheme
+    //});
+  //};
+
   const handleColorSchemeSelect = (scheme) => {
     setFormData({
       ...formData,
       colorScheme: scheme
     });
+  
+    // Apply immediately on selection
+    document.documentElement.style.setProperty('--primary-color', scheme.primary);
+    document.documentElement.style.setProperty('--secondary-color', scheme.secondary);
+  
+    // Save to localStorage for persistence if you like
+    localStorage.setItem('activeColorScheme', JSON.stringify(scheme));
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,9 +78,16 @@ const Signup = ({ onLogin, onSwitchToLogin }) => {
     localStorage.setItem('users', JSON.stringify(users));
     
     // Apply color scheme to CSS variables
-    document.documentElement.style.setProperty('--primary-color', formData.colorScheme.primary);
-    document.documentElement.style.setProperty('--secondary-color', formData.colorScheme.secondary);
-    
+    //document.documentElement.style.setProperty('--primary-color', formData.colorScheme.primary);
+    //document.documentElement.style.setProperty('--secondary-color', formData.colorScheme.secondary);
+    //
+    //
+    //
+    //localStorage.setItem('activeColorScheme', JSON.stringify(formData.colorScheme));
+  
+    //
+    //
+    //
     onLogin(newUser);
   };
 

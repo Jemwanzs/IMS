@@ -1,0 +1,16 @@
+<Built with:>
+#React,
+#TypeScript,
+#Tailwind CSS, along with;
+#UI components from shadcn/ui.
+
+
+rebuild the entire application using only:
+#vanilla HTML, CSS, and JavaScript - without React, Tailwind, or any external libraries.
+#Maintaining a similar design feel using standard CSS.
+The new version has the same features and design feel as the original,
+#including user authentication,
+>stock management,
+>sales records,
+>buyers database, and
+>export functionality - all without using React or external libraries.

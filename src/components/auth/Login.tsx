@@ -41,6 +41,7 @@ const Login = ({ onLogin, onSwitchToSignup }) => {
     }
   };
 
+  
   return (
     <Card className="max-w-md mx-auto">
       <CardHeader className="text-center">
@@ -165,7 +166,10 @@ const Login = ({ onLogin, onSwitchToSignup }) => {
         )}
       </CardContent>
     </Card>
+    
   );
+  
 };
+
 
 export default Login;
