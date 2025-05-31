@@ -39,7 +39,7 @@ const Index = () => {
             StockSales Pro
           </h1>
           <p className="text-lg text-gray-600">
-            Stock & Sales Management Solution
+            StockSales Management Solution
           </p>
         </div>
         
